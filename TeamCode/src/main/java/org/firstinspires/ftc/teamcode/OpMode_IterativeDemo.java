@@ -66,12 +66,13 @@ public class OpMode_IterativeDemo extends OpMode
     public void init() {
         telemetry.addData("Status", "Initialized");
 
+
         /* eg: Initialize the hardware variables. Note that the strings used here as parameters
          * to 'get' must correspond to the names assigned during the robot configuration
          * step (using the FTC Robot Controller app on the phone).
          */
-        // leftMotor  = hardwareMap.dcMotor.get("left_drive");
-        // rightMotor = hardwareMap.dcMotor.get("right_drive");
+         leftMotor  = hardwareMap.dcMotor.get("left_drive");
+         rightMotor = hardwareMap.dcMotor.get("right_drive");
 
         // eg: Set the drive motor directions:
         // Reverse the motor that runs backwards when connected directly to the battery
