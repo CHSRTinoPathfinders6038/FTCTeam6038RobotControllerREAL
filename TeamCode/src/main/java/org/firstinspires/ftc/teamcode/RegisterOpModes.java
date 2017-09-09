@@ -69,6 +69,9 @@ public class RegisterOpModes
     // Un-comment any line to enable that sample.
     // Or add your own lines to register your Team opmodes.
 
+    //Team6038 OpModes
+      manager.register("OpMode_IterativeDemo",  OpMode_IterativeDemo.class);
+
     // Basic Templates
      manager.register("Iterative Opmode",       TemplateOpMode_Iterative.class);
      manager.register("Linear Opmode",          TemplateOpMode_Linear.class);

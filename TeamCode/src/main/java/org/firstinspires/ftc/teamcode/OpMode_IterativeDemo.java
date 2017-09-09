@@ -50,8 +50,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  */
 
 
-@TeleOp(name="Template: Iterative OpMode", group="Iterative Opmode")  // @Autonomous(...) is the other common choice
-@Disabled
+@TeleOp(name="Iterative OpMode Demo", group="Iterative Opmode A")  // @Autonomous(...) is the other common choice
 public class OpMode_IterativeDemo extends OpMode
 {
     /* Declare OpMode members. */
@@ -90,9 +89,9 @@ public class OpMode_IterativeDemo extends OpMode
     public void loop() {
         telemetry.addData("Status", "Running: " + runtime.toString());
 
-        // eg: Run wheels in tank mode (note: The joystick goes negative when pushed forwards)
-        // leftMotor.setPower(-gamepad1.left_stick_y);
-        // rightMotor.setPower(-gamepad1.right_stick_y);
+        // note: The joystick goes negative when pushed forwards TEST)
+        leftMotor.setPower(-gamepad1.left_stick_y);
+        rightMotor.setPower(-gamepad1.right_stick_y);
     }
 
     /*
